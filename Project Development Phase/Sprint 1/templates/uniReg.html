@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/uniReg.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index1.html">
+        <header>Enter Details To Predict</header>
+        <div class="regfrm">
+           <div class="score">
+            <label for="">Score:</label>
+            <label for="gre">GRE Score:</label>
+            <input type="number" id="gre">
+            <label for="toefl">TOEFL Score:</label>
+            <input type="number" id="toefl">
+            <label for="sop">SOP:</label>
+            <input type="number" id="sop">
+            <label for="lor">LOR:</label>
+            <input type="number" id="lor">
+            <label for="cgpa">CGPA Score:</label>
+            <input type="number" id="cgpa">
+           </div>
+           <div class="research">
+            <label for="research">Research:</label>
+            
+             <input type="radio" id="research" name="research">Research
+             <input type="radio" id="research" name="research">No Research
+           </div>
+           <div class="rating">
+            <label for="rating">Rating:</label>
+            <input type="radio" id="rating" name="radio">1
+            <input type="radio" id="rating" name="radio">2
+            <input type="radio" id="rating" name="radio">3
+            <input type="radio" id="rating"name="radio">4
+            <input type="radio" id="rating"name="radio">5
+           </div>
+
+           <div>
+            <button type="submit">Predict</button>
+           </div>
+        </div>
+
+    </form>
+</body>
+</html>
