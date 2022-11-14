@@ -1,0 +1,115 @@
+.body{
+    background-image: url("d1.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navigationbar {
+
+    height: 55px;
+    width: auto;
+    
+    background-color: #123C69;
+   
+  }
+   
+  .navigationbar a {
+    
+    float: left; 
+    font-size: 15px;
+    color:#edc7b7;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif
+  }
+  .navigationbar a:hover
+  {
+    background-color:rgb(16, 71, 91);
+   
+  }
+  .righticons{
+    display: flex;
+  }
+form{
+    border: 3px solid black;
+    padding: 15px; 
+    width: 35%;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 400px;
+    color:white;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 7px 10px 15px black inset;
+}
+.regfrm label{
+    font-weight: 800;
+    padding: 7px;
+}
+.regfrm input:hover{
+    BORDER:2px solid rgb(37, 68, 81);
+    background-color: bisque;
+    color: black;
+}
+.regfrm input{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.textfield input{
+    width: 100%;
+    box-sizing: border-box;
+}
+.textfield label{
+    font-weight: 700;
+    padding: 7px;
+}
+.score{
+    display: grid;
+    grid-template-columns: auto ;
+}
+
+header{
+    font-weight: 800;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+ .rating input{
+    
+    -ms-layout-grid: 100px;
+    margin: 15px;
+    transform: scale(1.5);
+    
+}
+.research input{
+    margin: 15px;
+    transform: scale(1.5);
+}
+
+.subButton{
+    padding:10px;
+    margin: 20px 180px;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    /* margin-left: 200px; */
+}
+button{
+    border:2px solid black;
+    padding:10px;
+    border-radius:7px;
+}
+
+button:hover{
+    border: 3px solid rgb(53, 183, 206);
+    background-color: black;
+    color: aliceblue;
+}
+
