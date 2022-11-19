@@ -1,0 +1,64 @@
+body{
+  background-image: url("d4.jpg");
+  /* background-color: bisque; */
+  background-repeat: no-repeat;
+  height: 500px;
+background-position: center;
+
+background-size: cover;
+}
+.navigationbar {
+
+  height: 55px;
+  width: auto;
+  
+  background-color: #123C69;
+ 
+}
+ 
+.navigationbar a {
+  
+  float: left; 
+  font-size: 15px;
+  color:#edc7b7;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 17px;
+  text-decoration: none;
+  font-family:'Times New Roman', Times, serif
+}
+.navigationbar a:hover
+{
+  background-color:rgb(16, 71, 91);
+ 
+}
+.righticons{
+  display: flex;
+}
+
+
+h2{
+  width: 500px;
+  color: green; 
+  font-size: x-large; 
+  font-weight:700;
+  margin: 20px;
+  text-align: center;
+  padding:15px;
+  border-radius:10px;
+  margin-left:400px;
+  /* margin-top:50px; */
+  border:3px solid black;
+}
+
+p{
+  /* text-align: center; */
+  margin-left: 520px;
+  border:3px solid black;
+  width: 20%;
+  padding: 15px;
+}

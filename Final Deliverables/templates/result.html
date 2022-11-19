@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename = 'css/result.css')}}">
+  <link rel="stylesheet" href="https://www.w3schools.com/icons/fontawesome5_icons_hands.asp">
+  <link rel="stylesheet" href="/static/result.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/index1.css')}}">
+  <title>University Admit eligibility predictor</title>
+
+  <script>
+    
+  </script>
+</head>
+<body>
+  <div class="navigationbar">      
+      <a href="/home">
+        <i class="home icon"></i> 
+      </a>
+      <!-- RightIcons  -->
+      <div class="righticons" style="padding-left: 1020px;">           
+       <div>
+        <a href="/Login">
+          <i class="users icon"></i>
+          Login/SignUp
+        </a>
+      </div>   
+    </div>
+  </div> 
+  <h2 style="margin-top: 50px;">
+   {{ibm2}} {{x}} {{per}}
+  
+  </h2>
+  <p style="font-size: larger;
+             font-weight: 700;
+  ">
+      <b style="font-size: x-large;">{{rs}} </b>   <br>
+   {{u}} <br>
+   {{u1}} <br>
+   {{u2}} <br>
+   {{u3}} <br>
+   {{u4}}
+  </p>
+</body>
+</html>

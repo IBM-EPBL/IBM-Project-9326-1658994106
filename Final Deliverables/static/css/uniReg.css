@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background-image: url("d1.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navigationbar {
+
+    height: 55px;
+    width: auto;
+    
+    background-color: #123C69;
+   
+  }
+   
+  .navigationbar a {
+    
+    float: left; 
+    font-size: 15px;
+    color:#edc7b7;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif
+  }
+  .navigationbar a:hover
+  {
+    background-color:rgb(16, 71, 91);
+   
+  }
+  .righticons{
+    display: flex;
+  }
+
+
+  form{
+    width: 30%;
+    border: 3px solid black;
+    margin: 30px;
+    margin-left: 450px;
+    padding: 15px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+  }
+  input,select{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    height: auto;
+    padding: 7px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+  }
+  input:hover,select:hover{
+    background-color: bisque;
+   
+   BORDER:2px solid rgb(37, 68, 81);
+}
+  label{
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+    padding-top: 20px;
+  }
+  
+  button{
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-top: 50px; */
+  }
+  button:hover{
+    border: 2px solid white;
+    background-color: rgb(8, 34, 180);
+    color: white;
+  }
+  .subButton{
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+
+  .score  input{
+    margin: 5px;
+  }
+  .rating input{
+    margin:5px;
+  }
+ .research input{
+    margin: 5px;
+ }

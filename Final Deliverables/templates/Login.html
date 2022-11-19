@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/login.css')}}">
+</head>
+<body>
+  <div class="navigationbar">      
+    <a href="/home">
+      <i class="home icon"></i> 
+    </a>
+    <!--RightIcons  -->
+    <div class="righticons" style="padding-left: 1020px;">           
+     <div>
+      <a href="/Login">
+        <i class="users icon"></i>
+        Login/SignUp
+      </a>
+    </div>   
+  </div>
+</div>
+    <marquee behavior="" direction="left">University Admission Eligibility Predictor</marquee>
+    <br>
+    <p style="color:green;font-size:x-large;font-weight:700;text-align:center">{{ibm1}}</p>
+                  <p style="color:green;font-size:x-larger;font-weight:700;text-align:center">{{ibm}}</p>
+    <div class="container">
+        <form action= "/checkuser" method = "post">
+            <div class="col">
+              <div class="login">
+                <div class="title">
+                  
+                <p>
+                    Login
+                </p>
+               </div>
+                <div class="type">
+                    <label for="emailid">Email id</label>
+                    <input type="email" id="emailid" name="emailid" required>
+                </div>
+                <div class="type">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <p style="color:red">{{msg}}</p>
+                <p style="margin-left:300px">Forgot password?</p>
+                <div class="button">
+                    <input type="Submit">
+                </div>
+              
+                <div class="hide-md-lg">
+                    <!-- <p style="text-align: center;">Or</p> -->
+                  </div>
+                  <br>
+                <!-- <div class="col">
+                    <a href="https://accounts.google.com/v3/signin/challenge/pwd?TL=AB_wV5qalR7OWYDdwmwZHOOlxas7V-VedOtEursqBbf1iw1X4HxVIEBSzP_576jx&checkConnection=youtube%3A1197%3A0&checkedDomains=youtube&cid=1&continue=https%3A%2F%2Fwww.google.com%2F&dsh=S218696591%3A1667367000408587&flowEntry=AddSession&flowName=GlifWebSignIn&pstMsg=1" class="google btn">
+                      <i class="fa fa-google fa-fw" style="margin-left: 130px;">
+                      </i> Login with Google+
+                    </a>
+                  </div> -->
+                <strong><p>Create account? <a href="/signup">Sign-up</a> </p></strong>
+            </div>
+            </div>
+          </div>
+        </form>
+      
+</body>
+</html>

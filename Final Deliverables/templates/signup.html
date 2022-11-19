@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/signup.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+    <title>Document</title>
+</head> 
+<body class="body">
+    <div class="navigationbar">      
+        <a href="/home">
+          <i class="home icon"></i> 
+        </a>
+        <!--RightIcons  -->
+        <div class="righticons" style="padding-left: 1020px;">           
+         <div>
+          <a href="/Login">
+            <i class="users icon"></i>
+            Login/SignUp
+          </a>
+        </div>   
+      </div>
+    </div>
+    <marquee behavior="" direction="left">University Admission Eligibility Predictor</marquee>
+    <form action="/adduser" method="post">
+        <div class="regform" >
+                <h3 style="text-align:center ; font-size:x-large; font-weight: 800; text-decoration: underline;">SignUp</h3><br>
+                {{msg}}
+                <div class="field" >
+                    <label for="username" >
+                        First Name:
+                    </label>
+                    <input type="text" id="username" name="username"  >
+                </div>
+                    <div class="field" >
+                    <label for="username" >
+                        Last Name:
+                    </label>
+                    <input type="text" id="username" name="lastname"  >   
+                </div>
+                <div class="field" >
+                    <label for="emailid">
+                        Email:
+                    </label>
+                    <input type="text" class="type" id="emailid" name="emailid" >
+                </div>
+                <div class="field" >
+                    <label for="password" >
+                        Password:
+                    </label>
+                    <input type="password" class="type" id="password" name="password" >
+                   
+                </div>
+                <div class="field">
+                    <label for="tel" >
+                        Mobile Number:
+                    </label>
+                    <input type="tel" class="type" id="tel" maxlength="10" name="tel">
+                </div>
+                <div class="gen">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" class="gender"  name="gender" id="gender">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" class="gender" id="gender" >
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" class="gender" id="gender">
+                    <label for="gender">Others</label>
+                </div>
+                <div class="field">
+                    <label for="dob" >
+                        Date of Birth:
+                    </label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                
+                <div class="field">
+                    <label  for="address" >
+                        Address:
+                    </label>
+                    <textarea rows="5" cols="20" id="address"  name="address" class="center" ></textarea>
+                </div>
+                    <!-- submit button -->
+                    <div class="btn">
+                        
+                    <button class="logbtn"  > Sign-up</button>
+                </div>
+    </form>
+</body>
+</html>

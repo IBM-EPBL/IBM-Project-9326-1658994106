@@ -1,0 +1,120 @@
+
+    .body{
+        background-image: url("d1.jpeg");
+        height: 120vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+.navigationbar {
+
+    height: 55px;
+    width: auto;
+    
+    background-color: #123C69;
+   
+  }
+   
+  .navigationbar a {
+    
+    float: left; 
+    font-size: 15px;
+    color:#edc7b7;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 5px;
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif
+  }
+  .navigationbar a:hover
+  {
+    background-color:rgb(16, 71, 91);
+   
+  }
+  .righticons{
+    display: flex;
+  }
+form{
+   border: 3px solid black;
+   background-color: rgba(0,0,0,0.5);
+    color: white;
+    width:30%;
+    margin-left:520px;
+    margin-top:28px;
+    padding: 9px;
+    border-radius: 10px;
+    /*box-shadow: 7px 10px 15px black inset;
+    */
+}
+input{
+    border:2px solid black;
+    padding:7px;
+    width: 100%;
+    height: 28px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    /*box-shadow: 3px 3px 3px rgb(8, 8, 8);
+    */
+}
+label{
+    font-weight: 600;
+    font-size: larger;
+    /*box-shadow: 6px 10px 7px black;
+    */
+}
+.center{
+    width:100%;
+    border-radius: 5px;
+    height: 20px;
+}
+
+
+input:hover{
+     background-color: bisque;
+    
+    BORDER:2px solid rgb(37, 68, 81);
+}
+.btn{
+    margin-left:150px;
+    padding: 20px;
+}
+
+button:hover{
+    color:white;
+
+}
+
+.field{
+    padding:10px;
+}
+.gender{
+    /* margin: 30px; */
+    padding-top:30px;
+}
+.gen{
+    display: flex;
+    margin: 10px;
+}
+.logbtn:hover{
+    background-color:rgb(16, 71, 91);
+    border:2px solid rgb(37, 68, 81);
+}
+.center:hover{
+    background-color:rgb(16, 71, 91);
+    BORDER:2px solid rgb(37, 68, 81);
+}
+.logbtn{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+marquee{
+    font-weight: 700;
+    font-size: x-large;
+    margin-top:10px;
+}

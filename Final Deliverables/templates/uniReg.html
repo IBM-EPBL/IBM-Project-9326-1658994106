@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/uniReg.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="navigationbar">      
+        <a href="/home">
+          <i class="home icon"></i> 
+        </a>
+        <!--RightIcons  -->
+        <div class="righticons" style="padding-left: 1020px;">           
+         <div>
+          <a href="/Login">
+            <i class="users icon"></i>
+            Login/SignUp
+          </a>
+        </div>   
+      </div>
+    </div>
+    <form action="/predict" method="POST">
+        <header style="color: white;font-size:x-large; font-weight:800;text-align:center">Enter Details To Predict</header>
+        <div class="regfrm">
+           <div class="score">
+            <br>
+            <label for=""><h3>Score:</h3></label>
+            <label for="gre">GRE Score:</label>
+            <input type="number" id="gre" name="gre">
+            <label for="toefl">TOEFL Score:</label>
+            <input type="number" id="toefl" name="toefl">
+        </div>
+
+          <div class="rating">
+              <label for="university_rating">University Rating(1-5):</label>
+             <input type="text" id="university_rating" name="university_rating">
+             </div>
+
+          <div class="score">
+            <label for="sop">SOP:</label>
+            <input type="float" id="sop" name="sop">
+            <label for="lor">LOR:</label>
+            <input type="float" id="lor" name="lor">
+            <label for="cgpa">CGPA Score:</label>
+            <input type="float" id="cgpa" name="cgpa">
+           </div>
+           <div class="research">
+            <label for="research">Research:</label>
+            <select class="ui dropdown" id="research" name="research">
+              <option value="1">Research</option>
+              <option value="0">No-research</option>
+            </select>
+           </div>
+           
+
+           <div class="subButton">
+            
+            <button type="submit" >Predict</button>
+
+           </div>
+        </div>
+
+    </form>
+    {{y}}
+</body>
+</html>
